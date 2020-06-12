@@ -79,6 +79,20 @@ class Operaciones:
         else:
             self.resultado['text'] = 'los campos son requeridos'
 
+    #creamos la funcion del botton 2
+    def botton2(self):
+        if self.validacion2():
+            dia=int(self.var3.get())
+            mes=int(self.var4.get())
+            año=int(self.var5.get())
+            aaños= 2019 - año
+            aañoss=24*(31*(aaños*12))
+            mmeses=24*(31*mes)
+            ddias=dia*24
+            resultado= aañoss + mmeses + ddias
+            self.resultado['text'] = 'Usted nacio {}/{}/{} y ha vivido {} horas'.format(dia,mes,año,resultado)
+        else:
+            self.resultado['text'] = 'los campos son requeridos'
 
 
 

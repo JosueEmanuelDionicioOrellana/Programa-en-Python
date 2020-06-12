@@ -132,6 +132,20 @@ class Operaciones:
         else:
             self.resultado['text'] = 'los campos son requeridos'            
 
+    #creamos la funcion del botton 5
+    def botton5(self):
+        if self.validacion1():
+            nombre=str(self.var1.get())
+            apellido=str(self.var2.get())
+            nombre_invertido = ""
+            apellido_invertido1= ""
+            for letra in nombre:
+                nombre_invertido = letra + nombre_invertido
+            for letra1 in apellido:
+                apellido_invertido1 = letra1 + apellido_invertido1
+            self.resultado['text'] = '{} {} o al revez {} {}'.format(nombre,apellido,nombre_invertido,apellido_invertido1)
+        else:
+            self.resultado['text'] = 'los campos son requeridos'
 
 #comprobamos si es el archivo principal
 if __name__ == '__main__':

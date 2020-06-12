@@ -32,6 +32,11 @@ class Operaciones:
         self.var2 = Entry(frame)
         self.var2.grid(row = 2,columnspan = 6)
 
+        #nombramos la etiqueta del 3er input
+        Label(frame, text = 'Dia: ').grid(row = 3,columnspan = 3)
+        self.var3 = Entry(frame)
+        self.var3.grid(row = 3, columnspan = 6)
+
 
 
 

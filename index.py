@@ -54,6 +54,10 @@ class Operaciones:
         ttk.Button(frame, text = 'Funcion 4', command = self.botton4).grid(row = 9, column = 4, sticky = W + E)
         ttk.Button(frame, text = 'Funcion 5', command = self.botton5).grid(row = 9, column = 5, sticky = W + E)
 
+        #label donde veremos el resultado
+        self.resultado = Label(self.wind, text = '', fg = 'black')
+        self.resultado.grid(row = 1, column = 0, columnspan = 2, sticky = W + E)
+
 
 
 

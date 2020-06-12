@@ -94,7 +94,20 @@ class Operaciones:
         else:
             self.resultado['text'] = 'los campos son requeridos'
 
-
+    #creamos la funcion del botton 3
+    def botton3(self): 
+        if self.validacion1():
+            nombre=str(self.var1.get())
+            apellido=str(self.var2.get())
+            numero_nombre=int(len(nombre))
+            numero_apellido=int(len(apellido))
+            sumatoria= numero_nombre + numero_apellido
+            if sumatoria %2==0 :
+               self.resultado['text'] = '{} {}, su nombre junto con su apellido es par'.format(nombre,apellido)
+            else:
+                self.resultado['text'] = '{} {}, su nombre junto con su apellido es impar'.format(nombre,apellido)
+        else:
+            self.resultado['text'] = 'los campos son requeridos'
 
 
 #comprobamos si es el archivo principal

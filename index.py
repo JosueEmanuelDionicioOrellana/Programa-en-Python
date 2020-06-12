@@ -37,6 +37,10 @@ class Operaciones:
         self.var3 = Entry(frame)
         self.var3.grid(row = 3, columnspan = 6)
 
+        #nombramos la etiqueta del 4to input
+        Label(frame, text = 'Mes: ').grid(row = 4,columnspan = 3)
+        self.var4 = Entry(frame)
+        self.var4.grid(row = 4, columnspan = 6)
 
 
 

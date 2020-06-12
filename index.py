@@ -2,6 +2,17 @@ from tkinter import ttk
 from tkinter import *
 
 class Operaciones:
+    #iniciamos la clase y le indicamos que debe de traer una ventana para poder iniciar
+    def __init__(self, window):
+
+        #valor de de ancho y alto de la ventana
+        ancho = 400
+        alto = 300
+
+        self.wind = window
+        self.wind.geometry(str(ancho)+'x'+str(alto))
+        self.wind.columnconfigure(0, weight=1)
+        self.wind.title('Examen Final de ingenieria en sistemas')
 
 
 

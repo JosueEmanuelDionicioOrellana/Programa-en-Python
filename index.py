@@ -21,6 +21,11 @@ class Operaciones:
 
         Label(frame, text = 'Bienvenidos',font=("Times New Roman",30)).grid(row = 0,columnspan= 6)
 
+        #nombramos la etiqueta del 1er input
+        Label(frame, text = 'Nombre: ').grid(row = 1,columnspan = 3)
+        self.var1 = Entry(frame)
+        self.var1.focus()
+        self.var1.grid(row = 1,columnspan = 6)
 
 
 

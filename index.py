@@ -27,6 +27,11 @@ class Operaciones:
         self.var1.focus()
         self.var1.grid(row = 1,columnspan = 6)
 
+        #nombramos la etiqueta del 2do. input
+        Label(frame, text = 'Apellido: ').grid(row = 2,columnspan = 3)
+        self.var2 = Entry(frame)
+        self.var2.grid(row = 2,columnspan = 6)
+
 
 
 

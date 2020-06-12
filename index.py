@@ -14,6 +14,14 @@ class Operaciones:
         self.wind.columnconfigure(0, weight=1)
         self.wind.title('Examen Final de ingenieria en sistemas')
 
+        #Creamos el contenedor de la aplicación
+
+        frame = LabelFrame(self.wind, text = 'Examen final')
+        frame.grid(row = 0, column = 0, columnspan = 10, pady = 50)
+
+        Label(frame, text = 'Bienvenidos',font=("Times New Roman",30)).grid(row = 0,columnspan= 6)
+
+
 
 
 

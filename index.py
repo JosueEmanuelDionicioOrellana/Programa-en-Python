@@ -1,6 +1,13 @@
 from tkinter import ttk
 from tkinter import *
 
+class Operaciones:
+
+
+
+
+
+
 #comprobamos si es el archivo principal
 if __name__ == '__main__':
     #si la comprobovación de ventana principal es verdadero entonces 

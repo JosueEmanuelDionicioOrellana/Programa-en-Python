@@ -58,6 +58,13 @@ class Operaciones:
         self.resultado = Label(self.wind, text = '', fg = 'black')
         self.resultado.grid(row = 1, column = 0, columnspan = 2, sticky = W + E)
 
+    #primera validacion
+    def validacion1(self):
+        return len(self.var1.get()) != " " and len(self.var2.get()) != 0 and len(self.var3.get()) != " "
+
+    #Segunda validacion
+    def validacion2(self):
+      return len(self.var3.get()) != 0 and len(self.var3.get()) != 0 and len(self.var3.get()) != 0 and len(self.var5.get()) != 0 and len(self.var3.get()) != 0
 
 
 

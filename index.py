@@ -66,6 +66,19 @@ class Operaciones:
     def validacion2(self):
       return len(self.var3.get()) != 0 and len(self.var3.get()) != 0 and len(self.var3.get()) != 0 and len(self.var5.get()) != 0 and len(self.var3.get()) != 0
 
+    #creamos la funcion del botton 1
+    def botton1(self):
+        if self.validacion2():
+            dia=int(self.var3.get())
+            mes=int(self.var4.get())
+            año=int(self.var5.get())
+            hdia= format(dia, "0x" )
+            hmes= format(mes, "0x" ) 
+            haño= format(año, "0x" )
+            self.resultado['text'] = 'La fecha es: {}/{}/{} y  en binario es:{}/{}/{}'.format(dia,mes,año,hdia,hmes,haño)
+        else:
+            self.resultado['text'] = 'los campos son requeridos'
+
 
 
 

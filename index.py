@@ -47,6 +47,14 @@ class Operaciones:
         self.var5 = Entry(frame)
         self.var5.grid(row = 5, columnspan = 6)
 
+        #Creamos el boton para ejecutar la función
+        ttk.Button(frame, text = 'Funcion 1', command = self.botton1).grid(row = 9, column = 1, sticky = W + E)
+        ttk.Button(frame, text = 'Funcion 2', command = self.botton2).grid(row = 9, column = 2, sticky = W + E)
+        ttk.Button(frame, text = 'Funcion 3', command = self.botton3).grid(row = 9, column = 3, sticky = W + E)
+        ttk.Button(frame, text = 'Funcion 4', command = self.botton4).grid(row = 9, column = 4, sticky = W + E)
+        ttk.Button(frame, text = 'Funcion 5', command = self.botton5).grid(row = 9, column = 5, sticky = W + E)
+
+
 
 
 
